@@ -1,0 +1,173 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import "bootstrap";
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+
+.notice {
+  color: green;
+}
+
+td, th {
+  vertical-align: middle !important;
+  text-align: center;
+}
+
+input[type="radio"] {
+  vertical-align: middle !important;
+}
+
+.alert {
+  color: red;
+}
+
+.customer-leave {
+  margin-top: 250px;
+}
+
+.form-ph::placeholder {
+  color: #bcbcbc;
+}
+
+.cart-item-quantity-field {
+  width: 70px;
+}
+
+.pagination {
+  justify-content: center;
+
+  span {
+      margin-right: 10px;
+  }
+}
+
+body {
+  background-color: #e1b47c;
+  color: #333;
+}
+
+// admin-session
+
+.signin {
+  border: 2px solid #f5c500;
+
+  .signin-title {
+    display: inline-block;
+    border-bottom: 3px solid #f5c500;
+  }
+
+  input[type="email"] {
+        width: 300px;
+        height: 40px;
+    }
+
+  input[type="password"] {
+          width: 300px;
+          height: 40px;
+      }
+  input[type="submit"] {
+    width: 200px;
+    height: 40px;
+    background-color: #f5c500;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: .5s;
+
+    &:hover {
+      background-color: #dcb000;
+    }
+  }
+}
+
+// top
+
+.top-text {
+  margin-top: 100px;
+
+  p {
+    background-color: #fff;
+    border: 2px solid #f5c500;
+    width: 500px;
+  }
+}
+
+// complete
+
+.complete-thanks {
+  margin-top: 150px;
+}
+
+// deliver_destination
+
+.deliver_destination_index_table {
+  .postcode {
+    width: 10%;
+  }
+  .address {
+    width: 40%;
+  }
+  .destination {
+    width: 20%;
+  }
+  .btn-space {
+    width: 30%;
+  }
+}
+
+// customer-order-show
+
+.cutomer-order-detail {
+  .item {
+    width: 60%;
+  }
+  .price {
+    width: 15%;
+  }
+  .quantity {
+    width: 10%;
+  }
+  .subprice {
+    width: 15%;
+  }
+}
+
+.customer-order-info {
+  .order {
+    width: 20%;
+  }
+  .order-content {
+    width: 80%;
+  }
+}
+
+// radio-button
+.radio_button {
+  label input{
+    vertical-align:middle;
+  }
+}
+.admin-item-price {
+  line-height: 48px;
+}
+
+.admin-customer-show {
+  td, th {
+  vertical-align: middle !important;
+  text-align: left;
+  }
+}

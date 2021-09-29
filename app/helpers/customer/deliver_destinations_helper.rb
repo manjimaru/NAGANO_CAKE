@@ -1,0 +1,2 @@
+module Customer::DeliverDestinationsHelper
+end

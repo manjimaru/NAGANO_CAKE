@@ -1,0 +1,13 @@
+<% if @deliver_destination.errors.any? %>
+
+  <div id="error_explanation">
+    <h2><%= pluralize(@deliver_destination.errors.count, "error") %> prohibited this obj from being saved:</h2>
+    <ul>
+      <% @deliver_destination.errors.full_messages.each do |message| %>
+        <li>
+          <%= message %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
